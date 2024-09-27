@@ -5,103 +5,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Esteban Brizuela</title>
     <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --text-color: #333;
-            --bg-color: #ecf0f1;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-        .perfil {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-            margin-bottom: 30px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: var(--secondary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .trabajo, .educacion, .proyecto {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .trabajo h3, .educacion h3, .proyecto h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-        }
-        .habilidades {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .habilidad {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        .contacto {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .contacto a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: var(--secondary-color);
-            color: white;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .perfil {
-                padding: 10px;
-            }
-            header {
-                padding: 20px 0;
-            }
-            h1 {
-                font-size: 2em;
-            }
-        }
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+:root {
+    /* Tema original*/
+    --bg-color: #ecf0f1;
+    --text-color: #333;
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --highlight-color: #e74c3c;
+}
+
+/* Tema cyan */
+.tema-cyan {
+    --bg-color: #e0ffff;
+    --text-color: #006666;
+    --primary-color: #00cccc;
+    --secondary-color: #008080;
+    --highlight-color: #00ffff;
+}
+
+/* Tema rosa */
+.tema-rosa {
+    --bg-color: #fff0f5;
+    --text-color: #8b3a62;
+    --primary-color: #ff69b4;
+    --secondary-color: #db7093;
+    --highlight-color: #ff1493;
+}
+
+/* Tema azul */
+.tema azul {
+    --bg-color: #e6f2ff;
+    --text-color: #00008b;
+    --primary-color: #4169e1;
+    --secondary-color: #1e90ff;
+    --highlight-color: #00bfff;
+}
+
+/* Tema violeta */
+.tema-violeta {
+    --bg-color: #f8e6ff;
+    --text-color: #4b0082;
+    --primary-color: #8a2be2;
+    --secondary-color: #9400d3;
+    --highlight-color: #9370db;
+}
+
+/* Tema gris */
+.tema-gris {
+    --bg-color: #f0f0f0;
+    --text-color: #333333;
+    --primary-color: #808080;
+    --secondary-color: #a9a9a9;
+    --highlight-color: #d3d3d3;
+}
+
+/* Tema rojo con blanco y azul */
+.tema-rojoyblancoazul {
+    --bg-color: #ffffff;
+    --text-color: #000080;
+    --primary-color: #ff0000;
+    --secondary-color: #0000ff;
+    --highlight-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.perfil {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil_imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.trabajo, .educacion, .proyecto {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.trabajo:hover, .educacion:hover, .proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.trabajo h3, .educacion h3, .proyecto h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.trabajo ul, .educacion ul {
+    padding-left: 20px;
+}
+
+.trabajo li, .educacion li {
+    margin-bottom: 10px;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.habilidad {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.habilidad:hover {
+    background-color: var(--highlight-color);
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contacto a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+    color: var(--highlight-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--highlight-color);
+}
+
+@media (max-width: 600px) {
+    .perfil {
+        padding: 10px;
+    }
+    header {
+        padding: 20px 0;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#tema-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#tema-menu {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+#tema-menu button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#tema-menu button:hover {
+    background-color: var(--highlight-color);
+}
     </style>
 </head>
 <body>
@@ -202,4 +366,53 @@
         <a href="https://github.com/SexoSupremo" target="_blank">Mi cuenta de GitHub</a>
     </footer>
 </body>
+
+<script>
+  const temas = [
+    { name: 'Original', class: '' },
+    { name: 'Cyan', class: 'tema-cyan' },
+    { name: 'Rosa', class: 'tema-rosa' },
+    { name: 'Azul', class: 'tema-azul' },
+    { name: 'Violeta', class: 'tema-violeta' },
+    { name: 'Gris', class: 'tema-gris' },
+    { name: 'Rojo-Blanco-Azul', class: 'tema-rojoyblancoazul' }
+];
+
+
+const temaToggle = document.createElement('button');
+temaToggle.id = 'tema-toggle';
+temaToggle.innerText = 'Cambiar Tema';
+document.body.appendChild(temaToggle);
+
+//  menú de temas
+const temaMenu = document.createElement('div');
+temaMenu.id = 'tema-menu';
+document.body.appendChild(temaMenu);
+
+
+temas.forEach(tema => {
+    const button = document.createElement('button');
+    button.innerText = tema.name;
+    button.onclick = () => settema(tema.class);
+    temaMenu.appendChild(button);
+});
+
+
+function settema(temaClass) {
+    document.body.className = temaClass;
+    temaMenu.style.display = 'none';
+}
+
+
+temaToggle.onclick = () => {
+    temaMenu.style.display = temaMenu.style.display === 'none' ? 'block' : 'none';
+};
+
+// Cerrar el menú si se hace clic fuera de él
+document.addEventListener('click', (event) => {
+    if (!temaToggle.contains(event.target) && !temaMenu.contains(event.target)) {
+        temaMenu.style.display = 'none';
+    }
+});
+</script>
 </html>
