@@ -1,6 +1,201 @@
-!<!DOCTYPE html>
-
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Esteban Brizuela</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #ecf0f1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .perfil {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .trabajo, .educacion, .proyecto {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .trabajo h3, .educacion h3, .proyecto h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .habilidad {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .contacto {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contacto a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .perfil {
+                padding: 10px;
+            }
+            header {
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
+<body>
+    <div class="perfil">
+        <header>
+            <h1>Esteban Daniel Brizuela Perez</h1>
+            <p>Tester</p>
+        </header>
+
+        <section class="section">
+            <h2>Experiencia Laboral</h2>
+            <div class="trabajo">
+                <h3>Blizzard Entertainment</h3>
+                <p><strong> Voluntario - QA Tester para World of Warcraft</strong> | 06/04/2015 - Presente</p>
+                <ul>
+                    <li>Realizo pruebas exhaustivas de nuevas características, contenido y parches del juego cada expansion (cada 4 o 5 años).</li>
+                    <li>Identifico, documento y reporto bugs y problemas de jugabilidad utilizando sistemas internos de seguimiento.(cada parche nuevo)</li>
+                    <li>Colaboro con equipos de desarrollo para reproducir y solucionar problemas complejos.</li>
+                    <li>Participo en sesiones de juego para evaluar el balance, la diversión y la experiencia general del usuario.(cada 1 año)</li>
+                    <li>Contribuyo a la mejora continua de los procesos de QA y las metodologías de prueba mediante innovaciones tecnologicas de grado informatico o social.</li>
+                </ul>
+    
+        </section>
+
+        <section class="section">
+            <h2>Educación</h2>
+            <div class="educacion">
+                <h3>Cnel. Vicente Mongelos</h3>
+                <p><strong>Secundaria Concluida</strong> | 01/01/2014 - 20/11/2016</p>
+            </div>
+            <div class="educacion">
+                <h3>Cnel. Vicente Mongelos</h3>
+                <p><strong>Bachillerato Cientifico con Enfasis en Ciencias Sociales</strong> | 01/01/2017 - 20/11/2019</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades</h2>
+            <div class="habilidades">
+                <span class="habilidad">Adaptabilidad</span>
+                <span class="habilidad">Liderazgo</span>
+                <span class="habilidad">Innovacion</span>
+                <span class="habilidad">Resolucion de Problemas]</span>
+                <span class="habilidad">Paciencia</span>
+                <span class="habilidad">Analisis General</span>
+                <span class="habilidad">Pensamiento Critico</span>
+                <span class="habilidad">Gestion de Proyectos</span>
+                <span class="habilidad">Lenguajes: Python,Java,JavaScript,C++,Rust,Q#,C,Mtr</span>
+                <span class="habilidad">Desarrollo Web: HTML,CSS</span>
+                <span class="habilidad">Bases de datos: SQL, MongoDB,PostgreSQL</span>
+                <span class="habilidad">Analisis de datos</span>
+                <span class="habilidad">Ciberseguridad (basico)</span>
+                <span class="habilidad">IA y Machine Learning</span>
+                <span class="habilidad">Secretariado</span>
+                <span class="habilidad">Administración Pública</span>
+                <span class="habilidad">Ciencias Policiales</span>
+                <span class="habilidad">Redacción Legal</span>
+                <span class="habilidad">Analisis de impacto regulatorio</span>
+                <span class="habilidad">Relaciones Internacionales</span>
+                <span class="habilidad">Análisis de politicas públicas</span>
+                <span class="habilidad">Investigación Jurídica</span>
+                <span class="habilidad">Derecho Constitucional</span>
+                <span class="habilidad">Detección y reporte de bugs</span>
+                <span class="habilidad">Pruebas de Software</span>
+                
+                
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <h3>Simulador de gastos,presupuesto,etc conectada a una base de datos</h3>
+                <p>El proyecto intenta simular a una empresa tradicional, manejando los datos mas importantes como la del usuario,gastos,presupuesto,impuestos,etc</p>
+                <a href="https://github.com/SexoSupremo/Tarea-1" target="_blank">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3>Intento de grafica en 3D de moleculas</h3>
+                <p>El proyecto era un intento de mostrar en un grafico las moleculas en 3D, aun esta en proceso de actualizacion y el codigo actualizado sera subido al repositorio proximamente</p>
+                <a href="https://github.com/SexoSupremo/visualmolecular" target="_blank">Ver proyecto</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Información de Contacto</h2>
+            <div class="contacto">
+                <p>Email: <a href="mailto:kejsoficial@gmail.com">[kejsoficial@gmail.com]</a></p>
+                <p>LinkedIn: <a href="https://py.linkedin.com/in/esteban-brizuela-575b73227" target="_blank">Mi perfil de LinkedIn</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://github.com/SexoSupremo" target="_blank">Mi cuenta de GitHub</a>
+    </footer>
+</body>
+</html>
